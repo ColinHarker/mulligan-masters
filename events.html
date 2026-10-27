@@ -12,14 +12,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://colinharker.github.io/events.html">
     <meta property="og:title" content="Mulligan Masters Events | Bay Area Golf Tournaments">
-    <meta property="og:description" content="Join us for the 2nd Annual Golf for Good Scramble on August 22nd, 2026 at Baylands Golf Links. View our calendar of tournaments and social gatherings.">
+    <meta property="og:description" content="Explore Mulligan Masters tournaments, themed rounds, and past golf events across the Bay Area.">
     <meta property="og:image" content="https://colinharker.github.io/assets/images/golf-for-good-logo.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://colinharker.github.io/events.html">
     <meta property="twitter:title" content="Mulligan Masters Events | Bay Area Golf Tournaments">
-    <meta property="twitter:description" content="Join us for the 2nd Annual Golf for Good Scramble on August 22nd, 2026 at Baylands Golf Links. View our calendar of tournaments and social gatherings.">
+    <meta property="twitter:description" content="Explore Mulligan Masters tournaments, themed rounds, and past golf events across the Bay Area.">
     <meta property="twitter:image" content="https://colinharker.github.io/assets/images/golf-for-good-logo.png">
     
     <!-- Favicon -->
@@ -101,14 +101,19 @@
                 
                 <!-- Events Tabs -->
                 <div class="events-tabs mb-5" data-aos="fade-up">
-                    <div class="events-tab active" data-target="upcoming-events">Upcoming Events</div>
-                    <div class="events-tab" data-target="booked-rounds">Upcoming Rounds</div>
-                    <div class="events-tab" data-target="past-events">Past Events</div>
+                    <div class="events-tab" data-target="upcoming-events">Upcoming Events</div>
+                    <div class="events-tab active" data-target="past-events">Past Events</div>
                 </div>
                 
                 <!-- Upcoming Events -->
-                <div id="upcoming-events" class="events-content">
+                <div id="upcoming-events" class="events-content" style="display: none;">
+                    <p class="text-center">No upcoming events have been announced. Check back for our next gathering.</p>
+                </div>
+                
+                <!-- Past Events -->
+                <div id="past-events" class="events-content">
                     <div class="events-container">
+                        <!-- 2nd Annual Golf for Good Scramble -->
                         <div class="event-card" data-aos="fade-up">
                             <div class="event-image">
                                 <img src="assets/dog_logo_scramble_logo.png" alt="2nd Annual Golf for Good Scramble" style="width: 100%; height: 100%; object-fit: cover;">
@@ -117,59 +122,9 @@
                                 <span class="event-date">August 22, 2026</span>
                                 <h3>2nd Annual Golf for Good Scramble</h3>
                                 <p class="event-location"><i class="fas fa-map-marker-alt me-2"></i>Baylands Golf Links, Palo Alto, CA</p>
-                                <p>Join us for the 2nd Annual Golf for Good Scramble Tournament! A fun-focused scramble supporting Westie Rescue of Orange County &amp; Beyond. Shotgun start at 9:00 AM.</p>
-                                <p><strong>$205 per golfer</strong> - Includes green fees, cart, range balls, tournament gift, and donation.</p>
-                                <div class="event-contact mt-3">
-                                    <a href="golf-for-good-2026.html" class="btn-airy btn-airy--forest">
-                                        <i class="fas fa-info-circle"></i> View Event Details &amp; Register
-                                    </a>
-                                </div>
+                                <p>A fun-focused scramble tournament at Baylands Golf Links, bringing together golf, community, and giving back.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Booked Rounds -->
-                <div id="booked-rounds" class="events-content" style="display: none;">
-                    <div class="container">
-                        <div class="row mb-4">
-                            <div class="col-12 text-center">
-                                <p class="lead">View our upcoming rounds. Join us at these courses for regular play with the Mulligan Masters group.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-striped" id="booked-rounds-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Date</th>
-                                                <th>Course</th>
-                                                <th>Status</th>
-                                                <th>Groups</th>
-                                                <th>Open Spots</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="6" class="text-center">Loading booked rounds...</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-12 text-center">
-                                <p><small>Data is pulled from our <a href="https://docs.google.com/spreadsheets/d/1TToyNaNsboS7RTARk06NF08s673M0Jx2NORqvwy0qQI/edit?gid=828020761#gid=828020761" target="_blank">scheduling spreadsheet</a>.</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Past Events -->
-                <div id="past-events" class="events-content" style="display: none;">
-                    <div class="events-container">
                         <!-- Ugly Sweater Round -->
                         <div class="event-card" data-aos="fade-up">
                             <div class="event-image">
@@ -353,6 +308,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/sheets.js"></script>
 </body>
 </html>
+
